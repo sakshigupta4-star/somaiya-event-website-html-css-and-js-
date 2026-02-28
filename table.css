@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(i6.jpg);
+    background-size: cover;
+}
+
+.heading{
+    background-color: #1E1E24;
+    color:white;
+    width: 100%;
+    height: 4.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1{
+    text-shadow: #f31f1b 0.5px 0 5px;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+table{
+    border-collapse: collapse;
+    width:80%; 
+    margin-top: 80px;
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+tr:nth-child(Even){
+    background-color: #f2f2f2;
+    color: black;
+}
+
+tr:nth-child(odd){
+    background-color: #1E1E24;
+    color: white;
+}
+
+tr{
+    padding: 10px;
+    height: 5rem;
+}
+
+tbody tr:hover{
+    box-shadow: inset 0 0 0 2px red;
+    transition: all 0.3 ease-in;
+}
+
+td{
+    text-align: center;
+}
+
+.next-page{
+    text-align: end;
+    height: 4rem;
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.np{
+    background-color: red;
+    height: 2.8rem;
+    width: 6.8rem;
+    border-radius: 10px;
+    margin-top: 6rem;
+}
+
+.np a{
+    text-decoration: none;
+    color: white;
+}
+
+@media(max-width: 640px){
+   .heading{
+    font-size: 0.5rem;
+   }
+}
